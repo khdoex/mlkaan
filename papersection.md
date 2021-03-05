@@ -19,11 +19,14 @@ Continuous Wavelet Transform is a tool for getting the time-frequency based reco
 
 #### 2.1 Mathematically
 Wavelet Transform of x at position u and scale s is equal to:
+
 ![form 1_b.png](https://www.dropbox.com/s/9hwiedspq1ofplk/form%201_b.png?dl=0&raw=1)
+
 Where psi is the wavelet function, and psi bar is complex conjugate of psi. 
 We worked on the Morlet Wavelet for analyzing the seismic signal, which is:
 
 ![form2 24.png](https://www.dropbox.com/s/n7xnmmqm9p10dda/form2%2024.png?dl=0&raw=1)
+
 here t is time and  w0 is wavenumber of the wavelet.
 
 #### 2.2 Code
