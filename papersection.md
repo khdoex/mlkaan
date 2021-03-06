@@ -128,17 +128,21 @@ We used Obspy's Classic STA/LTA function for this purpose.
 After we imply the STA/LTA algorithm on both transformed and original signal and plot them as follows:
 #####  STA/LTA on original signal
 On Noise:
+
 ![stalta_n.png](https://www.dropbox.com/s/escqenb5vpnio0q/stalta_n.png?dl=0&raw=1)
 
 On Earthquake:
+
 ![stalta_an.png](https://www.dropbox.com/s/abjffxp5vlrqt4k/stalta_an.png?dl=0&raw=1)
 
 #### STA/LTA on transformed signal
 
 On Noise:
+
 ![staltacw_n.png](https://www.dropbox.com/s/sd1iozcnzi6wy4c/staltacw_n.png?dl=0&raw=1) ![staltacw1_n.png](https://www.dropbox.com/s/fn7ltps6tflunc0/staltacw1_n.png?dl=0&raw=1)
 
 On Earthquake:
+
 ![staltacw_an.png](https://www.dropbox.com/s/i70ux1tlb1b8rz4/staltacw_an.png?dl=0&raw=1) ![staltacw1_an.png](https://www.dropbox.com/s/5h1fl2qpx22etpj/staltacw1_an.png?dl=0&raw=1)
 
 #### 4.2- EQTransformer
