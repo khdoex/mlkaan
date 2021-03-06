@@ -206,8 +206,11 @@ Here the nf is number of logarithmically spaced frequencies between fmin and fma
 |nf-2-fr-10-40 obspycwt w=5 mini|0.99951413856768|0.99309678976587|20572|143|4588|10|0.996890486833155|0.995632763975155|2.04719615|19.0691514|20518|90|4641|64|0.99003984063745|0.994922122943215|3.371328266|33.91297117|20377|104|4627|205|20582|4731|
 
 EQT_CWT_Micro = nf-3-fr-30-35-obspycwt-w=5 
+
 EQT_CWT =  nf-3-fr-30-35-obspycwt-w=5 Mini version
+
 EQT_CWT_NF4 = nf-4-fr-10-40-obspycwt-w=5 Mini version
-EQT_CWT_NF5 = nf-5-fr-10-40-obspycwt-w=5 Mini versionr
+
+EQT_CWT_NF5 = nf-5-fr-10-40-obspycwt-w=5 Mini version
 
 
