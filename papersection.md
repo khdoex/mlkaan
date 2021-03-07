@@ -104,7 +104,7 @@ below parameters are chosen according to experiments, this is only one example.
 `nf` (number of logarithmically spaced frequencies between fmin and fmax) = 4 
 
 
-After we imply the cwt on the seismic trace, it will compute an array of shape (nf, len(trace).
+After we imply the cwt on the seismic trace, it will compute an array of shape `(nf, len(trace))`.
 
 Each new channel will be look like these:
 
