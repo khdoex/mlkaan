@@ -91,14 +91,14 @@ from the [Obspy Cwt function](<https://docs.obspy.org/_modules/obspy/signal/tf_m
 
 We take each channel, one by one for the cwt.
 then implying the cwt with chosen parameters 
-dt (time step between two samples in seconds) = 1/100                                
+`dt` (time step between two samples in seconds) = 1/100                                
 
 below parameters are chosen according to experiments, this is only one example.
 
-w0 (wavenumber) =5
-fmin (minimum freq. in Hz) = 10 
-fmax (maximum freq. in Hz) = 40 
-nf (number of logarithmically spaced frequencies between fmin and fmax) = 4 
+`w0` (wavenumber) =5
+`fmin` (minimum freq. in Hz) = 10 
+`fmax` (maximum freq. in Hz) = 40 
+`nf` (number of logarithmically spaced frequencies between fmin and fmax) = 4 
 
 
 After we imply the cwt on the seismic trace, it will compute an array of shape (nf, len(trace).
@@ -144,7 +144,14 @@ On Earthquake:
 
 ![staltacw_an.png](https://www.dropbox.com/s/i70ux1tlb1b8rz4/staltacw_an.png?dl=0&raw=1) ![staltacw1_an.png](https://www.dropbox.com/s/5h1fl2qpx22etpj/staltacw1_an.png?dl=0&raw=1)
 #### 4.2- EQTransformer
- 
+EQTransformer is a multi-task deep neural network for simultaneous earthquake detection and phase picking with a hierarchical attentive model. It mainly consists of one very deep encoder and three separate decoders (detector, P-picker, and S-picker branches) with an attention mechanism.  
+
+EQTransformer model emulates this through two levels of attention mechanism in a hierarchical structure. one at the global level for identifying an earthquake signal in the input time series, and one at the local level for identifying different seismic phases within that earthquake signal. Two levels of self-attention (global and local) help the model capture and exploit dependencies between local (individual phases) and global (full-waveform) features within an earthquake signal.
+
+![eqt_model.png](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-17591-w/MediaObjects/41467_2020_17591_Fig1_HTML.png?as=webp)
+
+We modified EQTransformer to take more than 3 channels. Our extra channels contains CWT version of the original data. Number of extra channels differs according to the `nf` parameter of CWT. 
+
 The aim of the Featurization Experiments was the developing the EQTransformer model using CWT. We added extra channels to the original signal and gave that signal to the model.  Model become much more heavy with CWT. This is the disadvantage of using CWT. 
 
 However we are still experimenting the parameters, by changing them systematically.
