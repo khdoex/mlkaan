@@ -101,7 +101,7 @@ below parameters are chosen according to experiments, this is only one example.
 
 `fmax` (maximum freq. in Hz) = 40 
 
-`nf` (number of logarithmically spaced frequencies between fmin and fmax) = 4 
+`nf` (number of logarithmically spaced frequencies between fmin and fmax) = 2 
 
 
 After we imply the cwt on the seismic trace, it will compute an array of shape `(nf, len(trace))`.
