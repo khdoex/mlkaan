@@ -96,8 +96,11 @@ then implying the cwt with chosen parameters
 below parameters are chosen according to experiments, this is only one example.
 
 `w0` (wavenumber) =5
+
 `fmin` (minimum freq. in Hz) = 10 
+
 `fmax` (maximum freq. in Hz) = 40 
+
 `nf` (number of logarithmically spaced frequencies between fmin and fmax) = 4 
 
 
