@@ -164,10 +164,9 @@ However we are still experimenting the parameters, by changing them systematical
 The Dataset that we are using is from STEAD dataset, Stead-Mini and Stead Micro. Stead-Mini consists 23542 noise and 103023 earthquakes. Stead-Micro consists 2354 noise and 10302 earthquakes.
 
 ##### 4.2.2 Results
-The Results of these experiments can be found in the table below. Starting with EQT_CWT_micro, till the end are the experiments of CWT.
-If not specified, every model(that uses cwt) is trained with micro dataset. Models that are trained using Mini dataset are have mini extension on its name.
+The Results of these experiments can be found in the table below. EQT is the original model of EQTransformer.
+If not specified in the name, Obspy CWT function is used.
 
-Here the nf is number of logarithmically spaced frequencies between fmin and fmax. Values after fr(frequency range) are fmin and fmax. And w is wavenumber of the wavelet.
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |model_name|Dataset|Frequency Range|Number Of Frequency | wavelet number|det_recall|det_precision|d_tp|d_fp|d_tn|d_fn|p_recall|p_precision|p_mae|p_rmse|p_tp|p_fp|p_tn|p_fn|s_recall|s_precision|s_mae|s_rmse|s_tp|s_fp|s_tn|s_fn|#events|#noise|
